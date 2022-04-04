@@ -170,25 +170,6 @@ console.log(newFilter(arr, cb7));
 console.log(arr.filter(cb7));
 
 
-// 9) concat() e newConcat:
-console.log('9) NewConcat:')
-const newConcat = (array, array2) => {
-    let newArray = array;
-    for (let index = 0; index < array2.length; index++) {
-        let elt = array2[index];
-        newArray.push(elt);
-    }
-    return newArray;
-};
-console.log(newConcat(arr, arr2));
-arr = [1,2,3,4,5];
-console.log(arr.concat(arr2));
-
-
-
-let arr3 = [1,2,3,4,5];
-
-
 // 10) includes() e newIncludes():
 console.log('10) NewIncludes:')
 const newIncludes = (array, elt, fromIndex) => {
@@ -282,31 +263,6 @@ console.log(newJoin(arr3, 'KATAS7!'));
 console.log(arr3.join('KATAS7!'));
 
 
-// 13) reduce() e newReduce():
-console.log('13) NewReduce:')
-// const newReduce = (array, cb8) => {
-//     return cb8((acc, value, index, array), 10);
-// };
-
-// const cb8 = (acc, value, index, array, initialValue) => {
-//     if (initialValue === undefined) {
-//         index = 0;
-//         acc = array[index];
-//         value = array[index+1];      
-//     } else {
-//         acc = initialValue;
-//         index = 1;
-//         value = array[index]
-//     }
-//     // let value = array[index];
-//     return acc + value, initialValue;
-// };
-
-// console.log(newReduce(arr3, cb8));
-// console.log(arr3.reduce(acc, value, index, arr3), 10);
-// Reproduza a função reduce() sua callback, argumentos e valor de retorno
-
-
 // 14) slice() e newSlice():
 console.log('14) NewSlice:')
 const newSlice = (array, start, end) => {
@@ -342,76 +298,3 @@ console.log(arr.slice(2, -1));
 // Reproduza a função slice(), argumentos e valor de retorno
 
 let arr4 = [1,2,3,4,[5,6,7,[8,9,[10]]]];
-
-// 15) flat() e newFlat():
-console.log('15) NewFlat:')
-const newFlat = (array, depth) => {
-    if (depth === undefined) {
-        depth = 1;
-    }
-    let newArray = [];
-    let deepness = 1;
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] === typeof 'object' && deepness < depth) {
-            console.log('EI!')
-            deepness += 1;
-            for (let j = 0; j < array[j].length; j++) {
-                if (typeof array[i][j] === 'object' && deepness < depth) {
-                    deepness += 1;
-                    for (let k = 0; k < array[k].length; k++) {
-                        newArray.push(arr[i][j][k]);
-                    }
-                }
-                newArray.push(arr[i][j]);
-            }
-            newArray.push(arr[i][j]);
-            console.log(newArray)
-        }
-        newArray.push(arr[i]);
-    }
-    return newArray;
-};
-console.log(newFlat(arr, 4));
-console.log(arr4.flat(4));
-// Reproduza a função flat(), argumentos e valor de retorno
-
-let arr5 = [1,2,3,4,5,[6,7,8,9,10]];
-
-// 16) flatMap() e newFlatMap():
-console.log('16) NewFlatMap:')
-const newFlatMap = (array, cb9) => {
-    let newArr = [];
-    for (let index = 0; index < array.length; index++) {
-        let value = array[index];
-        newArr.push(cb9(value, index, array));
-    }
-    return newArr;
-};
-
-const cb9 = (value, index, array) => {
-    value = array[index];
-    if (array[index] === typeof 'object') {
-        for (let j = 0; j < array[index].length; j++) {
-            value *= 10;
-        }
-    }
-    value *= 10;
-    return value;
-};
-
-console.log(newFlatMap(arr5, cb9));
-console.log(arr5.flatMap(cb9));
-// Reproduza a função flatMat() sua callback, argumentos e valor de retorno
-
-
-// 17) Array.of() e newArrayOf():
-console.log('17) NewArrayOf:')
-const newArrayOf = element => {
-    let newArray = [];
-    if (element === undefined) return newArray;
-    newArray.push(element);
-    return newArray;
-};
-
-console.log(newArrayOf('e tudo ainda não se acabou'));
-console.log(Array.of('e tudo ainda não se acabou'));
