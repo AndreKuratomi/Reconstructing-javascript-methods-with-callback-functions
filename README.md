@@ -1,5 +1,4 @@
-# Reconstructing-javascript-methods-with-callback-functions
-## CoinObject
+## Recriando métodos javascript com funções callback
 
 - [Descrição](#descrição)
 - [Instalação](#instalação)
@@ -10,11 +9,8 @@
 
 # Descrição
 
-<p><strong>CoinObject</strong> é um jogo simples de 'cara ou coroa' aplicado a 20 modeas. Esta aplicação utiliza HTML5, CSS3 e a linguagem Javascript com DOM e Programação Orientada a Objetos.</p>
+<p><strong>Recriando métodos javascript com funções callback</strong> é um jogo simples de 'cara ou coroa' aplicado a 20 modeas. Esta aplicação utiliza a linguagem Javascript.</p>
 <br>
-
-<p>Link vercel:</p>
-https://abkura.gitlab.io/coinobject/
 
 # Instalação
 
@@ -29,16 +25,16 @@ git init
 ```
 
 <br>
-<h5>1. Fazer o clone do reposítório <strong>CoinObject</strong> na sua máquina pelo terminal do computador ou pelo do IDE:</h5>
+<h5>1. Fazer o clone do reposítório <strong>Recriando métodos javascript com funções callback</strong> na sua máquina pelo terminal do computador ou pelo do IDE:</h5>
 
 ```
-git clone git@gitlab.com:ABKURA/coinobject.git
+git clone https://github.com/AndreKuratomi/Reconstructing-javascript-methods-with-callback-functions.git
 ```
 
 <p>Entrar na pasta criada:</p>
 
 ```
-cd coinobject
+cd reconstructing-javascript-methods-with-callback-functions
 ```
 
 <p>E rodar a aplicação:</p>
@@ -57,16 +53,7 @@ code .
 
 <p>Precisamos rodar a extensão do VSCode <b>Go live</b></p>
 
-<p>A aplicação rodará no navegador automaticamente.</p>
-
-
-<h3>Via Deploy Vercel:</h3>
-
-<p>Basta clicar no link abaixo:</p>
-
-https://abkura.gitlab.io/coinobject/
-
-
+<p>A aplicação rodará no navegador automaticamente pelo DevTools (console de F12).</p>
 
 
 # Termos de uso
