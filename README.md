@@ -48,10 +48,13 @@ code .
 
 # Utilização
 
+<p>Para observar os consoles precisamos rodar o seguinte comando:</p>
 
-<h3>Via VSCode:</h3>
+```
+node katas7.js
+```
 
-<p>Precisamos rodar a extensão do VSCode <b>Go live</b></p>
+<p>Ou rodar a extensão do VSCode <b>Go live</b></p>
 
 <p>A aplicação rodará no navegador automaticamente pelo DevTools (console de F12).</p>
 
