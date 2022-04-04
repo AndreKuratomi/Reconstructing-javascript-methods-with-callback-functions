@@ -9,7 +9,7 @@
 
 # Descrição
 
-<p><strong>Recriando métodos javascript com funções callback</strong> é um jogo simples de 'cara ou coroa' aplicado a 20 modeas. Esta aplicação utiliza a linguagem Javascript.</p>
+<p><strong>Recriando métodos javascript com funções callback</strong> é um exercício que recria métodos javascript do 0 com funções callback.</p>
 <br>
 
 # Instalação
